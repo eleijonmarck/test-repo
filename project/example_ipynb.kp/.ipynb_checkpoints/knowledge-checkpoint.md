@@ -7,7 +7,7 @@ tags:
 - knowledge
 - example
 created_at: 2016-06-29 00:00:00
-updated_at: 2020-05-18 10:13:32.213444
+updated_at: 2020-05-15 14:21:52.657422
 tldr: This is short description of the content and findings of the post.
 thumbnail: images/output_5_1.png
 ---
@@ -55,7 +55,7 @@ plt.ylabel('both of them', size=20)
 
 
 
-    Text(0, 0.5, 'both of them')
+    <matplotlib.text.Text at 0x1119e1cd0>
 
 
 
@@ -71,46 +71,3 @@ plt.ylabel('both of them', size=20)
 ### Appendix
 
 Put all the stuff here that is not necessary for supporting the points above. Good place for documentation without distraction.
-
-### testing to add something to the post
-
-
-```python
-import pandas as pd
-import numpy as np
-import matplotlib
-from matplotlib import pyplot as plt
-
-
-%matplotlib inline
-
-x = np.linspace(0, 3*np.pi, 500)
-plot_df = pd.DataFrame()
-plot_df["x"] = x
-plot_df["y"] = np.sin(x**2)
-
-
-plot_df.plot('x', 'y', 
-             color='lightblue',
-             figsize=(15,10))
-plt.title("testing", size=25)
-plt.xlabel('you definitely need axis labels', size=20)
-plt.ylabel('both of them', size=20)
-```
-
-
-
-
-    Text(0, 0.5, 'both of them')
-
-
-
-
-
-![png](images/output_11_1.png)
-
-
-
-```python
-
-```
